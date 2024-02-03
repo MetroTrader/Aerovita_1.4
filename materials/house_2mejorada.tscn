@@ -1,0 +1,24 @@
+[gd_scene load_steps=6 format=3 uid="uid://brj7a3w02is7y"]
+
+[ext_resource type="PackedScene" uid="uid://rrabu0jgl6cf" path="res://assets/3d models/house2.glb" id="1_0hqhy"]
+[ext_resource type="Texture2D" uid="uid://du6vhpw05i8e0" path="res://texture/House texture on point.png" id="2_6sd1f"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jcid8"]
+albedo_texture = ExtResource("2_6sd1f")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q7pca"]
+albedo_texture = ExtResource("2_6sd1f")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gbbcw"]
+albedo_texture = ExtResource("2_6sd1f")
+
+[node name="house2" instance=ExtResource("1_0hqhy")]
+
+[node name="casa" parent="." index="0"]
+material_override = SubResource("StandardMaterial3D_jcid8")
+
+[node name="ventana" parent="." index="1"]
+material_override = SubResource("StandardMaterial3D_q7pca")
+
+[node name="cristalfogata" parent="." index="2"]
+material_override = SubResource("StandardMaterial3D_gbbcw")
